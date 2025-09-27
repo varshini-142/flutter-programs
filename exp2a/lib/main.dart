@@ -11,14 +11,17 @@ class MainApp extends StatelessWidget {
   const MainApp({super.key});
 
   @override
-  Widget build(BuildContext context) 
+  Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
               const Text(
                 'Welcome to flutter!',
                 style: TextStyle(fontSize: 24),
-            
+              ),
                //If you want to add an image later, uncomment this block:
                const SizedBox(height: 16),
                Image.asset(
@@ -41,7 +44,7 @@ class MainApp extends StatelessWidget {
             ],
           ),
         ),
-      ),
-    );
-  }
+      ),
+    );
+  }
 }
